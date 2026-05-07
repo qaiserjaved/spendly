@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="auth-card">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">Last updated: May 2026</p>
+
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">1. Data We Collect</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    When you use Spendly, we collect the information you provide directly to us, including
+                    your name, email address, and expense data. We also collect usage information such as
+                    your IP address, browser type, and device information to improve your experience.
+                </p>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">2. How We Use Your Data</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    We use your personal data to provide, maintain, and improve our services, to process
+                    your transactions, to communicate with you about your account, and to display relevant
+                    content. We do not sell your personal information to third parties.
+                </p>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">3. Data Storage</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    Your data is stored securely on encrypted servers. We implement industry-standard
+                    security measures to protect your personal information from unauthorized access,
+                    alteration, or destruction. Data is retained for as long as your account is active
+                    or as required by law.
+                </p>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">4. Third Party Services</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    We may use third-party services to help us operate and improve Spendly. These services
+                    may have access to your data only to perform tasks on our behalf and are obligated
+                    to keep your information confidential. We do not share your personal data with
+                    advertising networks or other third parties for marketing purposes.
+                </p>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">5. Your Rights</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    You have the right to access, correct, or delete your personal data at any time.
+                    You can also object to or restrict certain processing of your data. To exercise
+                    these rights, please contact us using the information below.
+                </p>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+                <h2 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;">6. Contact Us</h2>
+                <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7;">
+                    If you have any questions about this Privacy Policy or your data, please contact us
+                    at privacy@spendly.app. We will respond to your inquiry within 30 days.
+                </p>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('landing') }}" class="btn-ghost">Back to Spendly</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
